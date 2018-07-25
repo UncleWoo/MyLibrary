@@ -17,6 +17,7 @@ namespace MyLibrary.Models
             {
                 new Book
                 {
+                    BookID = 1,
                     Title = "Czysty kod. Podręcznik dobrego programisty",
                     Description = "Poznaj najlepsze metody tworzenia doskonałego kodu",
                     Pages = 424,
@@ -25,10 +26,11 @@ namespace MyLibrary.Models
 
                 new Book
                 {
+                    BookID = 2,
                     Title = "Algorytmy. Ilustrowany przewodnik",
                     Description = "Poznaj algorytmy i przekonaj się, jak bardzo są przydatne!",
                     Pages = 256,
-                    Price = 54.90
+                    Price = 54.90,
                 }
             };
 
@@ -39,12 +41,14 @@ namespace MyLibrary.Models
             {
                 new Author
                 {
+                    AuthorID = 1,
                     FirstName = "Robert",
                     LastName = "C.Martin"
                 },
 
                 new Author
                 {
+                    AuthorID = 2,
                     FirstName = "Aditya",
                     LastName = "Bhargava"
                 }
@@ -57,11 +61,13 @@ namespace MyLibrary.Models
             {
                 new Category
                 {
+                    CategoryID = 1,
                     CategoryName = "Techniki programowania"
                 },
 
                 new Category
                 {
+                    CategoryID = 2,
                     CategoryName = "Algorytmy"
                 }
             };

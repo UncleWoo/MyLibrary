@@ -23,8 +23,8 @@ namespace MyLibrary.Models
 
         [DisplayName("Publication Date")]
         [DataType(DataType.DateTime)]
-        [DisplayFormat(DataFormatString = "{0:MM/dd/yyyy}", ApplyFormatInEditMode = true)]
-        public DateTime PublicationDate { get; set; }
+        //[DisplayFormat(DataFormatString = "{0:MM/dd/yyyy}", ApplyFormatInEditMode = true)]
+        //public DateTime PublicationDate { get; set; }
 
         public virtual Author Author { get; set; }
 

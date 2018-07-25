@@ -14,13 +14,14 @@ namespace MyLibrary
     public class WebApiApplication : System.Web.HttpApplication
     {
         protected void Application_Start()
-        {
-            Database.SetInitializer<MyLibraryContext>(new MyLibraryInitializer());
+        {            
             AreaRegistration.RegisterAllAreas();
             GlobalConfiguration.Configure(WebApiConfig.Register);
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+
+            Database.SetInitializer<MyLibraryContext>(new MyLibraryInitializer());
         }
     }
 }
